@@ -251,7 +251,10 @@ void ARunCharacter::Death()
 
 			GetMesh()->SetVisibility(false);
 			UE_LOG(LogTemp, Warning, TEXT("DEATH"));
-
+			if (GEngine)
+			{
+				GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Black, FString::Printf(TEXT("left: %s"), bIsPaused ? TEXT("true") : TEXT("false")));
+			}
 			World->GetTimerManager().SetTimer(RestartTimerHandle, this, &ARunCharacter::OnDeath, 1.f);
 		}
 	}
