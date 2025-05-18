@@ -234,6 +234,7 @@ void ARunCharacter::Death()
 
 		UWorld* World = GetWorld();
 
+
 		if (World)
 		{
 			bIsDead = true;
