@@ -1,4 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
 
@@ -27,7 +26,7 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Assets")
 	class USoundBase* OverlapSound;
-	// Sets default values for this actor's properties
+
 	ACoinItem();
 
 protected:
